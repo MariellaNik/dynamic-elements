@@ -12,3 +12,5 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const messages = document.getElementsByClassName("message");
+console.log(messages);
