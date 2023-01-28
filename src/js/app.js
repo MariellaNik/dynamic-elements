@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", () => {
     message.innerHTML = "Sample text content"+i;
     document.body.appendChild(message);
     }
+     let messageElement = document.createElement("p");
+  messageElement.innerHTML = "This is an additional message element.";
+  document.body.appendChild(messageElement);
   });
 });
-
-const messages = document.getElementsByClassName("message");
-console.log(messages);
