@@ -1,21 +1,22 @@
 import "../scss/app.scss";
 
-window.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector(".button");
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
+ window.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".button");
+    button.addEventListener("click", () => {
+      alert("💣");
+  
+    body.addEventListener("click", () => {
+  const body = document.querySelector('body');
+  
+    for (let i = 0; i < 5; i++) {
+      const article = document.createElement('article');
+      article.classList.add('message');
+      article.textContent = `This is message ${i + 1}`;
+      body.appendChild(article);
+    }
+  });
+  });
 });
-});
-    let add_article=()=>{
-      const articleTemplate=document.createElement(`article`); 
-   const message = articleTemplate.classList.add(`.message`);
-      //box = document.queryselector('.message')
-      articleTemplate.innerHTML=
-        "sample text sample text sample text";
-      document.body.appendChild(articleTemplate);
-    };
 
-document.body.addEventListner("click", (event) => {
-  let flag=5;  while(flag!=0){    event.preventDefault();    add_Article();    flag--;  }});
   
   
