@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
  // let flag=5;  while(flag!=0){    event.preventDefault();    add_Article();    flag--;  }});
   
     function onClick() {  
-   for (let index = 1; index <6; index++) {
+   for (let index = 1; index <5; index++) {
 
       let article = document.createElement('article');
       article.className='message';
