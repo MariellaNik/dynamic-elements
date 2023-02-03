@@ -1,19 +1,26 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
   const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    for (let i = 1; i <= 5; i++) {
-    alert("💣");
-      
-      
-    document.body.addEventListener("click", () => {
-    for (let i = 1; i <= 5; i++) {
-      const message = document.createElement("article");
-      message.classList.add("message");
-      message.textContent = `This is message ${i}`;
-      document.body.appendChild(message);
-    }
-  });
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
 });
+});
+    let add_article=()=>{
+      const articleTemplate=document.createElement("article");
+      articleTemplate.classList.add("message");
+      articleTemplate.innerHTML=
+        "sample text sample text sample text";
+      document.body.appendChild(articleTemplate);
+    };
+
+document.body.addEventListner("click", (event) => {
+  let flag=5;
+  while(flag!=0){
+    event.preventDefault();
+    add_Article();
+    flag--;
+  }
+});
+    
+   
