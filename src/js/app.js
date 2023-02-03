@@ -8,8 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
 });
     let add_article=()=>{
       const articleTemplate=document.createElement(`article`);
-    articleTemplate.classList.add(`message`);
-      //box = document.queryselector('.message')
+   // articleTemplate.classList.add(`message`);
+      box = document.queryselector('.message')
       articleTemplate.innerHTML=
         "sample text sample text sample text";
       document.body.appendChild(articleTemplate);
